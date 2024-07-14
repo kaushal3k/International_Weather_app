@@ -21,9 +21,9 @@
     outline: none ;
     border-radius: 40px;
     padding-left: 25px;
-    color: aqua;
+    color: rgb(38, 39, 39);
     background: rgb(202, 198, 198);
-    font-size: 18px;
+    font-size: 28px;
 }
 
 .search-bar img{

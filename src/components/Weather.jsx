@@ -12,6 +12,7 @@ import humidity_icon from '../assets/humidity.png'
 
 
 
+
 const Weather = () => {
 
   const inputRef = useRef()
@@ -52,11 +53,8 @@ const Weather = () => {
           return;
         }
 
-
         console.log(data);
 
-
-        
 
         const icon = allIcons[data.weather[0].icon] || clear_icon;
         setWeatherData({
@@ -90,10 +88,10 @@ const Weather = () => {
         {weatherData?<>
           <img src= {weatherData.icon} alt="clear_icon" className= 'weather-icon' />
        <p className='temperature'>{weatherData.temperature} c</p>
-       <p className='location'> {weatherData.location} </p>
+       <p className='text-left mt-5'> {weatherData.location} </p>
        <div className='weather-data'> 
              <div className= "col">
-               <img src= {humidity_icon} alt= " none" />
+               <img src= {humidity_icon} alt= "none" />
              </div>
              <p> {weatherData.humidity}% </p>
              <span> Humidity</span>
@@ -102,6 +100,7 @@ const Weather = () => {
                <img src= {wind_icon} alt= "nono" />
              <p> {weatherData.windSpeed}km/h </p>
              <span> Wind Speed </span>
+             <h1 className="text-left mt-5">Hello, Bootstrap!</h1>
        </div>
         </>:<></>}
 
